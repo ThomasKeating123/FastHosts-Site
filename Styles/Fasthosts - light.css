@@ -1,0 +1,259 @@
+﻿/*CSS reset*/
+@import url('reset.css');
+/*End of CSSc reset*/
+body {
+    margin: 0px;
+    font-family: "AntennaCond-Medium",arial,helvetica,sans-serif !important;
+    min-height: 100%;
+    position: absolute;
+    min-width: 100%;
+}
+.header-top {
+    background-color: lightgray;
+
+    height: 45px;
+}
+.separator1{
+    background-color: white;
+    height: 1.5px;
+}
+.separator2{
+    background-color: rgb(71, 71, 71);
+    height: 5px;
+}
+.right {
+    float: right;
+    border: 3px transparent;
+    padding: 10px;
+}
+.left{
+    float: left;
+    border: 3px transparent;
+    padding: 10px;
+}
+.container-fluid{
+   background-color: gray;
+}
+.active{
+    background-color: rgb(0, 153, 255);
+}
+.header-btns{
+    border:none;
+    background-color: gray;
+    color: white;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-lower {
+    background-color: gray;
+    margin: 0px;
+}
+.footer-lower-tbl{
+    width: 800px;
+    padding: 10px;
+    color: white;
+}
+.footer-lower-tbl-logo {
+    width: 400px;
+    padding: 10px;
+    color: white;
+}
+.footer-logo{
+    float:right;
+}
+.footer-menu {
+    background-color: rgb(71, 71, 71);
+}
+.container-fluid .footer-menu{
+    background-color: lightgray;
+}
+.footer-info {
+    display: table-cell;
+    vertical-align: text-bottom;
+    font-size: medium;
+    margin-top: 20px;
+}
+
+/*Added in from here*/
+.Data-Input-Form {
+    background-color: rgb(238, 238, 238);
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    border: 2px solid #808080;
+    top: 10px;
+    bottom: 30px;
+    overflow: visible;
+    margin-bottom: 10px;
+}
+
+.ImgContainer {
+    background-color: gray;
+    width: 100%;
+}
+
+.Img-Logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p {
+    display: table-cell;
+    vertical-align: text-bottom;
+    font-size: large;
+    margin-top: 20px;
+}
+
+.Form-Input {
+    width: 100%;
+    margin-bottom: 10px;
+    width: 340px;
+}
+
+.Form-Button {
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: gray;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+}
+
+.Form-Separator {
+    background-color: rgb(209, 209, 209);
+}
+
+.Form-Layout {
+    margin-left: 80px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.heading {
+    font-size: 96px;
+    color: gray;
+    margin: 10px;
+}
+
+.nav-justified {
+    margin-left: 10px;
+}
+
+.Links-Heading {
+    color: rgb(71, 71, 71);
+    font-size: 36px;
+}
+
+.Links {
+    color: rgb(56, 62, 84);
+}
+
+    .Links :hover {
+        text-decoration: none;
+    }
+
+    /*End add in*/
+.Form-Title{
+    font-size: xx-large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Sitemap-Links{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.Validator{
+    color: red;
+}
+.TLD-Search{
+    margin-left: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.TLD-Search-Box{
+    width: 500px;
+    height: 40px;
+}
+.TLD-Search-Title{
+    color: gray;
+    font-size: x-large;
+}
+.TLD-Search-Results{
+    width: 500px;
+    margin-bottom: 20px;
+}
+.TLD-Search-BTN{
+    width: 100px;
+    background-color: gray;
+    color: white;
+    border:solid;
+    border-color: gray;
+}
+.TLD-Info {
+    font-size: large;
+    width: 500px;
+}
+.alert {
+    padding: 20px;
+    background-color: green;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+    .closebtn:hover {
+        color: black;
+    }
+.Label-Heading{
+    font-size: 34px;
+    color: white;
+    margin: 0px;
+}
+.Data-Form {
+    background-color: rgb(238, 238, 238);
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    border: 2px solid #808080;
+    top: 10px;
+    bottom: 30px;
+    overflow: visible;
+    margin-bottom: 10px;
+}
+.Heading-Container {
+    background-color: gray;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.Gridview-interests{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.lbl_Theme{
+    color: black;
+}
+.input_contact {
+    width: 100%;
+    width: 400px;
+    resize: none;
+}
+.Links-Redirect{
+    margin-bottom: 10px;
+}

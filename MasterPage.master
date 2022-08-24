@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%--<!DOCTYPE html>--%>
+<html>
+<head runat="server">
+    <title></title>
+
+    <!--CSS FILES -->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Styles/Fasthosts.css" type="text/css" rel="stylesheet" id="theme" />
+    <!--End of CSS Files -->
+    <!--JS FILEs -->
+    <script src="Scripts/StyleSwitcher.js"></script>
+    <!--End of JS FILES -->
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body onload="getCookieOnLoad()">
+
+    <header>
+        <section>
+            <div class="header-top">
+                <div class="right">
+                    <% if (Session["User"] == null)
+                        { %>
+                        <button class="header-btns" onclick="location.href='RegistrationPage.aspx'">Sign up</button>
+                        <button class="header-btns" onclick="location.href='LoginPage.aspx'">Login</button>
+                    <%}
+                    else
+                    { %>
+                        <button class="header-btns" onclick="location.href='Logout.aspx'">Logout</button>
+                    <%} %>
+                    <asp:Label ID="LBL_User" runat="server" Text="" class="lbl_Theme"></asp:Label>
+                </div>
+                <div class="left">
+                    <asp:Label ID="LBL_Theme" runat="server" Text="Choose a theme" class="lbl_Theme"></asp:Label>
+                    <input class="header-btns" type="button" onclick="dark()" value="Dark" />
+                    <input class="header-btns" type="button" onclick="light()" value="Light" />
+                </div>
+            </div>
+        </section>
+        <div class="separator1">
+        </div>
+             <article>
+                    <div class="container-fluid">
+                        <nav class="navbar navbar-inverse" style="background-color: transparent; border: none; margin-left: 200px;">
+                            <div class="navbar-header">
+                                <a class="navbar-brand" href="#"><img class="logo" src="Assets/fh_logo.png" /></a>
+                            </div>
+                            <ul class="nav navbar-nav" style="margin-left: 400px; margin-top: 10px;">
+                                <li><a href="HomePage.aspx">Home</a></li>
+                                <li><a href="SearchPage.aspx">Search</a></li>
+                                <li><a href="UsersInterests.aspx">Interests</a></li>
+                                <li><a href="Contact.aspx">Contact us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </article>
+            <div class="separator2">
+            </div>
+    </header>
+
+<%--    <form id="form1" runat="server">
+    <div>--%>
+        <asp:contentplaceholder id="contentplaceholder1" runat="server">
+        </asp:contentplaceholder>
+<%--    </div>
+    </form>--%>
+
+    <footer class="footer">
+        <%--<div class="footer-menu">
+               <nav class="navbar navbar-inverse" style="background-color: transparent; border: none; margin-bottom: 0px;">
+                   <div>
+                        <ul class="nav navbar-nav" style="margin-left: 700px;">
+                            <li><a href="HomePage.aspx">Home</a></li>
+                            <li><a href="Sitemap.aspx">Sitemap</a></li>
+                            <li><a href="Contact.aspx">Contact us</a></li>
+                        </ul>
+                   </div>
+               </nav>
+        </div>--%>
+        <div class="footer-lower">
+             <table>
+                <tr>
+                    <td class="footer-lower-tbl-logo">
+                        <img class="footer-logo" src="Assets/fh_logo.png" />
+                    </td>
+                    <td class="footer-lower-tbl">
+                        <p class="footer-info">© 1999-2017 Fasthosts Internet Limited. All rights reserved.</p>
+                        <p></p>
+                        <p class="footer-info">Fasthosts is the trading name of Fasthosts Internet Limited. Company registration No. 3656438. Registered in England and Wales. VAT No. 720821857. Registered office: Discovery House, 154 Southgate Street, Gloucester, GL1 2EX, United Kingdom.</p>
+                    </td>
+                </tr>
+             </table>
+            </div>
+    </footer>
+  
+</body>
+</html>
